@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="카카오톡을 시작합니다"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold" />
+    
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/login_email_edt"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:hint="이메일 또는 전화번호"
+        android:backgroundTint="#C6C6C6"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:paddingBottom="18dp"
+        android:layout_marginTop="44dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/login_password_edt"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:hint="비밀번호"
+        android:backgroundTint="#C6C6C6"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:paddingBottom="18dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/login_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="로그인"
+        android:background="@drawable/login_activity_btn"
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:backgroundTint="#FDE400"
+        android:layout_marginHorizontal="3dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/login_join_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="새로운 카카오계정 만들기"
+        android:background="@drawable/login_activity_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginTop="9dp"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:layout_marginHorizontal="3dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/login_find_account_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="카카오계정 또는 비밀번호 찾기"
+        android:textSize="10dp"
+        android:textColor="#6A6A6A"
+        android:layout_gravity="center"
+        android:layout_marginTop="9dp"
+        android:textStyle="bold"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

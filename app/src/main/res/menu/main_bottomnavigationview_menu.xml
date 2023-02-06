@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_friend_list"
+        android:title="menu_friend_list"
+        android:icon="@drawable/menu_friend_list_selector"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/menu_chat_list"
+        android:title="menu_chat_list"
+        android:icon="@drawable/menu_chat_list_selector"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/menu_view"
+        android:title="menu_view"
+        android:icon="@drawable/menu_view_selector"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/menu_shopping"
+        android:title="menu_shopping"
+        android:icon="@drawable/menu_shopping_selector"
+        android:enabled="true"/>
+
+    <item
+        android:id="@+id/menu_etc"
+        android:title="menu_etc"
+        android:icon="@drawable/menu_etc_selector"
+        android:enabled="true"/>
+
+</menu>

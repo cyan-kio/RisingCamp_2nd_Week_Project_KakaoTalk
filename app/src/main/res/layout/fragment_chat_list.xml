@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chat_list_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        app:contentInsetStart="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="채팅"
+                android:textColor="@color/black"
+                android:textSize="19.5dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/chat_list_search_btn"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:src="@drawable/friend_list_search_btn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/chat_list_option_btn"
+                android:layout_marginEnd="100dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/chat_list_create_chat_btn"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:src="@drawable/chat_list_create_chat_btn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/chat_list_open_chat_btn"
+                android:layout_marginEnd="18dp"
+                android:paddingBottom="2dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/chat_list_open_chat_btn"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:src="@drawable/chat_list_open_chat_btn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/chat_list_option_btn"
+                android:layout_marginEnd="19dp"
+                android:paddingBottom="1dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/chat_list_option_btn"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/friend_list_option_btn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chat_list_ad_img"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="2.5dp" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="17dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:src="@drawable/friend_list_my_profile_img"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/chat_list_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="강문선\n  "
+                    android:textSize="14dp"
+                    android:paddingVertical="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="9dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오전 11:02"
+                    android:textColor="#A3A3A3"
+                    android:textSize="11dp"
+                    android:layout_gravity="top|right"
+                    android:paddingTop="3.5dp"
+                    android:paddingEnd="5dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="17dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:src="@drawable/friend_list_my_profile_img"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="성시경\nㅎㅇ"
+                    android:textSize="14dp"
+                    android:paddingVertical="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="9dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오전 11:02"
+                    android:textColor="#A3A3A3"
+                    android:textSize="11dp"
+                    android:layout_gravity="top|right"
+                    android:paddingTop="3.5dp"
+                    android:paddingEnd="5dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="17dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:src="@drawable/friend_list_my_profile_img"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="임창정\nㅎㅇ"
+                    android:textSize="14dp"
+                    android:paddingVertical="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="9dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오전 11:02"
+                    android:textColor="#A3A3A3"
+                    android:textSize="11dp"
+                    android:layout_gravity="top|right"
+                    android:paddingTop="3.5dp"
+                    android:paddingEnd="5dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="17dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:src="@drawable/friend_list_my_profile_img"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="로이킴\nㅎㅇ"
+                    android:textSize="14dp"
+                    android:paddingVertical="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="9dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오전 11:02"
+                    android:textColor="#A3A3A3"
+                    android:textSize="11dp"
+                    android:layout_gravity="top|right"
+                    android:paddingTop="3.5dp"
+                    android:paddingEnd="5dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="17dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:src="@drawable/friend_list_my_profile_img"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="전상근\nㅎㅇ"
+                    android:textSize="14dp"
+                    android:paddingVertical="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="9dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오전 11:02"
+                    android:textColor="#A3A3A3"
+                    android:textSize="11dp"
+                    android:layout_gravity="top|right"
+                    android:paddingTop="3.5dp"
+                    android:paddingEnd="5dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="17dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:src="@drawable/friend_list_my_profile_img"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="정승환\nㅎㅇ"
+                    android:textSize="14dp"
+                    android:paddingVertical="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="9dp"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오전 11:02"
+                    android:textColor="#A3A3A3"
+                    android:textSize="11dp"
+                    android:layout_gravity="top|right"
+                    android:paddingTop="3.5dp"
+                    android:paddingEnd="5dp"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

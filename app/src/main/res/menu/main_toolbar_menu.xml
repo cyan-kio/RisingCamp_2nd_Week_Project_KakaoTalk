@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/toolbar_search"
+        android:title="toolbar_search"
+        android:icon="@drawable/friend_list_search_btn"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/toolbar_add"
+        android:title="toolbar_add"
+        android:icon="@drawable/friend_list_add_btn"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/toolbar_music"
+        android:title="toolbar_music"
+        android:icon="@drawable/friend_list_profile_music_btn"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/toolbar_option"
+        android:title="toolbar_option"
+        android:icon="@drawable/friend_list_option_btn"
+        app:showAsAction="always"/>
+</menu>
