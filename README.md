@@ -1,12 +1,26 @@
 # RisingCamp_2nd_Week_Project_KakaoTalk_Clone
-Activity LifeCycle을 학습하여 정리하고,
-(링크: https://www.notion.so/softsquared/2-21d9694918734379a9f1d54642089d11?pvs=4)
+Activity LifeCycle을 학습하여 정리하고,<br>
+(링크: https://www.notion.so/softsquared/2-21d9694918734379a9f1d54642089d11?pvs=4)<br>
 각 LifeCycle을 활용하여 KakaoTalk을 클론해보았다.
 
-## 시연 영상 및 화면
+## 시연영상 및 화면
+- 자동 로그인 구현
+<p align="center">
+  <img width="30%" src="https://user-images.githubusercontent.com/85236336/230571761-43cf562a-cecc-4f84-b638-775a0d1866fa.gif">
+</p>
+<br>
 
+- 최근 메뉴 저장 및 스크롤 위치 저장
+<p align="center">
+  <img width="30%" src="https://user-images.githubusercontent.com/85236336/230571911-2da30cc0-8da1-4d24-9e42-9c21a2c343f5.gif">
+</p>
+<br>
 
-## 프로젝트 설계
+- 카메라 인텐트 접근 및 오버뷰
+<p align="center">
+  <img width="30%" src="https://user-images.githubusercontent.com/85236336/230571848-ca523f62-1bc1-4c6c-b3ef-08a9e2981eb8.gif">
+</p>
+<br>
 
 ### 앱 분석
 
