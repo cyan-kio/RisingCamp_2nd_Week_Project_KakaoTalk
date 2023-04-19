@@ -1,7 +1,6 @@
-# RisingCamp_2nd_Week_Project_KakaoTalk_Clone
-Activity LifeCycle을 학습하여 정리하고,<br>
-(링크: https://www.notion.so/softsquared/2-21d9694918734379a9f1d54642089d11?pvs=4)<br>
-각 LifeCycle을 활용하여 KakaoTalk을 클론해보았다.
+# 라이징캠프 2주차 과제
++ 각 생명주기의 특징 조사 및 활용 고안
++ 생명주기를 활용하여 앱 만들기
 
 ## 시연영상 및 화면
 - 자동 로그인 구현
